@@ -87,12 +87,14 @@ main section img {
     background-color: #ffc300;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
     margin: 200px 0;
 }
 
 .card-img {
-    border:10px solid #ffc300;
+    border: 10px solid #ffc300;
 }
 
 .book,
