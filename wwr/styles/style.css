@@ -44,7 +44,7 @@ nav a:hover {
     color: whitesmoke;
 }
 
-.home-title {
+.home-title, .blog-title {
     color: #001d3d;
     font-family: "Bowlby One SC", "Arial Black", sans-serif;
     font-size: 2em;
@@ -174,8 +174,18 @@ main section img {
     border-radius: 5px;
 }
 
+.comment-submit {
+    background-color: #ffd60a;
+    color: #001d3d;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
 .book:hover,
-.join:hover {
+.join:hover,
+.comment-submit:hover {
     background-color: #001d3d;
     color: #ffd60a;
 }
@@ -200,8 +210,42 @@ main section img {
     padding-bottom: 15px;
 }
 
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blog-content {
+    grid-column: 2/5;
+    text-align: justify;
+    font-size: .8em;
+}
+
+.blog-content h2{
+    font-family: "Bowlby One SC", "Arial Black", sans-serif;
+    color: #003566;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.blog-comments {
+    grid-column: 2/5;
+    text-align: left;
+}
+.blog-comments h2 {
+    font-family: "Bowlby One SC", "Arial Black", sans-serif;
+    color: #003566;
+    font-size: 1.2em;
+}
+
+.blog-comments textarea {
+    font-size: .8em;
+    resize: none;
+    width: 100%;
+}
+
 footer {
-    background-color: #ffc300;
+    background-color: #ffd60a;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
