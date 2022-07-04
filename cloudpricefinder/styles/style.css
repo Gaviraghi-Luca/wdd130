@@ -2,7 +2,7 @@
 
 body {
     background-color: whitesmoke;
-    font-family: "Roboto:wght@300", Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
     font-size: 22px;
     padding: 0;
     margin: 0;
@@ -35,7 +35,7 @@ nav a:hover {
 
 header {
     background-color: #18020C;
-    font-family: "Archivo:wght@900", "Arial Black", sans-serif;
+    font-family: "Archivo";
     color: #15B946;
     display: grid;
     grid-template-columns: 150px auto;
@@ -69,7 +69,7 @@ header {
 
 #hero_msg h1 {
 
-    font-family: "Archivo:wght@900", "Arial Black", sans-serif;
+    font-family: "Archivo";
     font-size: 2em;
     margin-top: 10px;
 }
