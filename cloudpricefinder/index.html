@@ -12,14 +12,14 @@
 <body>
     <div id="content">
         <header>
-            <a id="logo_img" href="index.html">
-                <img src="images/logos_transparent_reduced.png" alt="Cloud Price Finder Logo">
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="aboutme.html">About me</a>
-            </nav>
+            <div id="navbar">
+                <a id="logo_img" href="index.html">
+                    <img src="images/logos_transparent_reduced.png" alt="Cloud Price Finder Logo">
+                </a>
+                <a id="home_link" href="index.html">Home</a>
+                <a id="blog_link" href="blog.html">Blog</a>
+                <a id="about_link" href="aboutme.html">About me</a>
+            </div>
         </header>
         <div id="hero">
             <div id="hero_box">
@@ -94,12 +94,27 @@
     <script>
         const resultsElement = document.getElementById('search_results');
         const formElement = document.forms[0];
+
         formElement.addEventListener('submit', function (e) {
             e.preventDefault();
             resultsElement.innerHTML = "Hello ! Just go on AWS";
             resultsElement.style.display = "block";
             formElement.reset();
         });
+
+        window.onscroll = function () {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
 </body>
 
