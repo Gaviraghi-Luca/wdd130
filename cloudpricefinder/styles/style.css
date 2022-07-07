@@ -108,8 +108,28 @@ a {
 #main_img {
     margin: 0 auto;
     grid-column: 2/3;
-    grid-row: 1/2;
     padding: 25px;
+}
+
+#blog_box {
+    margin: 50px 50px 0 50px;
+    background-color: #C5C5C5;
+    display: block;
+    padding: 25px;
+}
+
+#blog_box h2{
+    text-align: center;
+    padding: 25px;
+}
+
+#blog_box img {
+    float: right;
+    padding-left: 25px;
+}
+
+#blog_box p {
+    text-align: justify;
 }
 
 #search_box {
